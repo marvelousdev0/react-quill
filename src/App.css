@@ -1,0 +1,47 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.editor-container {
+  .ql-toolbar.ql-snow {
+    font-family: inherit;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+  }
+
+  .ql-picker.ql-insertCustomTags {
+    width: 90px;
+  }
+
+  .ql-picker.ql-insertCustomTags1 {
+    width: 90px;
+  }
+
+  .ql-picker.ql-smartText {
+    width: 90px;
+  }
+
+  .ql-insertCustomTags .ql-picker-item:before {
+    content: attr(data-label);
+  }
+
+  .ql-insertCustomTags1 .ql-picker-item:before {
+    content: attr(data-label);
+  }
+
+  .ql-smartText .ql-picker-item:before {
+    content: attr(data-label);
+  }
+
+  .quill {
+    .ql-container.ql-snow {
+      border-bottom-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+  }
+}
